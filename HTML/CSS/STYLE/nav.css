@@ -1,0 +1,99 @@
+:root {
+  --color-principal: deepskyblue;
+  --color-base: white;
+  --texto-parrafo: 24px;
+}
+
+nav {
+    padding: 10px 20px;
+    /*10px arriba abajo y 20px izquierda derecha
+    cuando son 3 valores serian uno arriba, el otro a los lados y el ultimo abajo*/
+    /*
+    los valores se leen en el sentido de
+    las agujas de reloj, iniciando desde
+    las 12
+    padding: 10px 20px 10px 20px
+    hay otra manera de hacer esto, pero es mucho
+    más larga
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px
+  */
+  /*
+    El display maneja como se muestran los
+    elementos o si se muestran
+  */
+  display: flex;
+  /*Maneja el eje principal del elemento*/
+    justify-content:space-between;
+  /*Maneja el eje secundario del elemento*/
+  align-items: center;
+  font-size: var(--texto-parrafo);
+   /*degradado*/
+   background: linear-gradient(90deg, var(--color-principal), var(--color-base));
+  }
+/*me pone todos los elementos en linea*/
+nav > div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/*nav > div > p:hover {*/
+.hover:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#contacto {
+  background-color: var(--color-base);
+  color: var(--color-principal);
+  font-size: var(--texto-parrafo);
+  /*
+    los colores se pueden poner en hexadecimal
+    rgb, rgba, hsl, hsla
+  /*los valores del borde 2px ancho, solid y el color*/
+  border: 2px solid #0000ff;
+  /*border-width: 2px 0;*/
+  border-radius: 25px;
+}
+
+/*PSEUDO CLASES*/
+/*Maneja el estado de un elemento*/
+/*
+  LISTA DE PSEUDO CLASES
+  :active (cuando se da click)
+  :focus (cuando se selecciona)
+  :hover (cuando se pasa el mouse)
+  :visited (cuando ya se visitó)
+  :link (cuando no se ha visitado)
+  :first-child (primer hijo)
+  :last-child (último hijo)
+*/
+#contacto:hover {
+  background-color: var(--color-principal);
+  color: white;
+  border: 2px solid white;
+  /*transition: propiedad tiempo efecto;*/
+  transition: background-color 0.5s, color 0.5s
+}
+
+  /*Crear otros archivos llamados
+  ejercicios_css.html
+  ejercicios.css
+
+  Crea un div que sea una columna
+  Y contenga 3 divs que sean  fila cada uno
+  y cada div contenga 2 parrafos que esten columna
+  alineados en el medio tanto vertical como horizontalmente
+  
+*/
+/*
+  ¿Qué es más específico?
+  Clase > Etiqueta
+  o
+  Clase > Clase
+  o
+  Id
+*/
