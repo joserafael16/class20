@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Rafael Rodríguez Yépez - Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primario: '#4a90e2',
+                        secundario: '#f39c12',
+                        terciario: '#e74c3c',
+                        cuaternario: '#2ecc71',
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 4s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans leading-normal tracking-normal min-h-screen bg-fixed bg-cover bg-center" style="background-image: url('/api/placeholder/1920/1080');">
+    <!-- Overlay para mejorar la legibilidad del contenido -->
+    <div class="min-h-screen bg-black bg-opacity-50">
+        <nav class="bg-primario bg-opacity-90 p-4 sticky top-0 z-50 backdrop-blur-sm">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold hover:scale-110 transition-transform">JRR</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#sobre-mi" class="text-white hover:text-secundario transition duration-300 hover:-translate-y-1">Sobre Mí</a>
+                    <a href="#educacion" class="text-white hover:text-secundario transition duration-300 hover:-translate-y-1">Educación</a>
+                    <a href="#experiencia" class="text-white hover:text-secundario transition duration-300 hover:-translate-y-1">Experiencia</a>
+                    <a href="#desarrollo-web" class="text-white hover:text-secundario transition duration-300 hover:-translate-y-1">Desarrollo Web</a>
+                    <a href="#habilidades" class="text-white hover:text-secundario transition duration-300 hover:-translate-y-1">Habilidades</a>
+                    <a href="#proyectos" class="text-white hover:text-secundario transition duration-300 hover:-translate-y-1">Proyectos</a>
+                    <a href="#contacto" class="text-white hover:text-secundario transition duration-300 hover:-translate-y-1">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-gradient-to-r from-primario/70 to-secundario/70 text-white py-20 backdrop-blur-sm">
+            <div class="container mx-auto text-center" data-aos="fade-up">
+                <img src="./foto.jpeg" alt="José Rafael Rodríguez Yépez" class="rounded-full w-48 h-48 mx-auto mb-8 object-cover border-4 border-white shadow-lg hover:scale-110 transition-transform duration-300">
+                <h1 class="text-5xl font-bold mb-2 animate-pulse-slow">José Rafael Rodríguez Yépez</h1>
+                <h2 class="text-2xl mb-8">Abogado y Contable</h2>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contacto" class="bg-white text-primario px-6 py-2 rounded-full hover:bg-secundario hover:text-white transition duration-300 transform hover:scale-105">Contáctame</a>
+                    <a href="#" class="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-primario transition duration-300 transform hover:scale-105">Descargar CV</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container mx-auto mt-8 px-4">
+            <!-- Secciones existentes con fondo semitransparente -->
+            <section id="sobre-mi" class="mb-16 bg-white/90 p-8 rounded-xl backdrop-blur-sm" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-primario">Sobre Mí</h2>
+                <p class="text-gray-700">Abogado y contable experimentado con pasión por el derecho laboral y la gestión financiera. Dedicado a proporcionar asesoramiento legal y financiero experto a clientes y empresas. Con una sólida formación y años de experiencia, me esfuerzo por ofrecer soluciones integrales y personalizadas.</p>
+            </section>
+
+            <section id="educacion" class="mb-16 bg-white/90 p-8 rounded-xl backdrop-blur-sm" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-secundario">Educación</h2>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li class="mb-2 hover:text-primario transition-colors">Especialización en Derecho Laboral (2007-2008)</li>
+                    <li class="hover:text-primario transition-colors">Licenciatura en Derecho (1996-2001)</li>
+                </ul>
+            </section>
+
+            <section id="experiencia" class="mb-16 bg-white/90 p-8 rounded-xl backdrop-blur-sm" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-terciario">Experiencia Profesional</h2>
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li class="mb-2 hover:text-primario transition-colors">Alumno del Profesor Giovanni Rodríguez (2024)</li>
+                    <li class="mb-2 hover:text-primario transition-colors">Contable en la empresa C & D</li>
+                    <li class="hover:text-primario transition-colors">Abogado independiente</li>
+                </ol>
+            </section>
+
+            <!-- Nueva sección de Desarrollo Web -->
+        <section id="desarrollo-web" class="mb-16 bg-white/90 p-8 rounded-xl backdrop-blur-sm" data-aos="fade-up" >
+            <h2 class="text-3xl font-bold mb-4 text-primario">Desarrollo Web</h2>
+    <div class="bg-gradient-to-r from-primario/20 to-secundario/20 p-6 rounded-lg">
+        <p class="text-gray-700 mb-4">Explorando el mundo del desarrollo web con pasión y dedicación. Creando soluciones digitales innovadoras y funcionales.</p>
+        <div class="flex flex-wrap gap-2">
+            <a href="http://127.0.0.7:5500/HTML/ejercicios_css.html" target="_blank">
+                <span class="bg-primario text-white px-3 py-1 rounded-full text-sm hover:opacity-80 transition-opacity">HTML5</span>
+            </a>
+            <a href="http://127.0.0.7:5500/HTML/ejercicios2_css.html" target="_blank">
+                <span class="bg-secundario text-white px-3 py-1 rounded-full text-sm hover:opacity-80 transition-opacity">CSS3</span>
+            </a>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                <span class="bg-terciario text-white px-3 py-1 rounded-full text-sm hover:opacity-80 transition-opacity">JavaScript</span>
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank">
+                <span class="bg-cuaternario text-white px-3 py-1 rounded-full text-sm hover:opacity-80 transition-opacity">Tailwind CSS</span>
+            </a>
+        </div>
+    </div>
+        </section>
+            <!-- seccion habilidades -->
+            <section id="habilidades" class="mb-16 bg-white/90 p-8 rounded-xl backdrop-blur-sm" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-cuaternario">Habilidades</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-cuaternario text-white px-3 py-1 rounded-full transform hover:scale-110 transition-transform">Word</span>
+                    <span class="bg-cuaternario text-white px-3 py-1 rounded-full transform hover:scale-110 transition-transform">Excel</span>
+                    <span class="bg-cuaternario text-white px-3 py-1 rounded-full transform hover:scale-110 transition-transform">Derecho Laboral</span>
+                    <span class="bg-cuaternario text-white px-3 py-1 rounded-full transform hover:scale-110 transition-transform">Contabilidad</span>
+                    <span class="bg-cuaternario text-white px-3 py-1 rounded-full transform hover:scale-110 transition-transform">Negociación</span>
+                    <span class="bg-cuaternario text-white px-3 py-1 rounded-full transform hover:scale-110 transition-transform">Asesoría Fiscal</span>
+                </div>
+            </section>
+
+            <section id="proyectos" class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-primario">Proyectos Destacados</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white/90 p-6 rounded-lg shadow-md backdrop-blur-sm hover:transform hover:scale-105 transition-all">
+                        <h3 class="text-xl font-bold mb-2 text-secundario">Reestructuración Laboral</h3>
+                        <p class="text-gray-700">Lideré la reestructuración laboral de una empresa de 500 empleados, optimizando costos y mejorando la eficiencia.</p>
+                    </div>
+                    <div class="bg-white/90 p-6 rounded-lg shadow-md backdrop-blur-sm hover:transform hover:scale-105 transition-all">
+                        <h3 class="text-xl font-bold mb-2 text-secundario">Auditoría Fiscal</h3>
+                        <p class="text-gray-700">Realicé una auditoría fiscal completa para una multinacional, identificando ahorros potenciales y asegurando el cumplimiento normativo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto" class="mb-16 bg-white/90 p-8 rounded-xl backdrop-blur-sm" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-terciario">Contáctame</h2>
+                <form class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="nombre" class="block text-gray-700 font-bold mb-2">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primario transform hover:scale-105 transition-all">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primario transform hover:scale-105 transition-all">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensaje" class="block text-gray-700 font-bold mb-2">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Tu mensaje" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primario transform hover:scale-105 transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="bg-terciario text-white px-6 py-3 rounded-md hover:bg-secundario transition duration-300 transform hover:scale-105 animate-bounce-slow">Enviar Mensaje</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="bg-primario/90 text-white py-8 backdrop-blur-sm">
+            <div class="container mx-auto text-center">
+                <p class="animate-pulse">&copy; 2024 José Rafael Rodríguez Yépez. Todos los derechos reservados.</p>
+                <div class="mt-4">
+                    <a href="tel:+393381544346" class="text-white hover:text-secundario mr-4 transition-colors">+39 3381544346</a>
+                    <a href="mailto:joserodriguez@711gmail.com" class="text-white hover:text-secundario transition-colors">joserodriguez@711gmail.com</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: true,
+        });
+    </script>
+</body>
+</html>
