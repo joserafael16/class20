@@ -1,0 +1,85 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-image: url("https://media.istockphoto.com/id/1393996461/es/vector/s%C3%ADmbolo-de-gesto-de-tijera-de-papel-de-roca-de-mano-jan-ken-pon-jap%C3%B3n-juego-tradicional.jpg?s=612x612&w=0&k=20&c=F6ooLoxj_oJJ1VtDoVjWSmR2FldEjZ8oCLzywxLgVrM=");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+.contenedor-juego {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  max-width: 600px;
+  width: 90%;
+  backdrop-filter: blur(3px);
+}
+.titulo-principal {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.elecciones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+.eleccion {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.7);
+}
+.eleccion:hover {
+  transform: scale(1.1);
+  background-color: rgba(240, 249, 255, 0.9);
+}
+.eleccion img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.eleccion p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2980b9;
+  font-size: 14px;
+}
+#resultado {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+#estadisticas {
+  background-color: rgba(241, 248, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.estadistica {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.estadistica p {
+  margin: 0;
+  font-size: 13px;
+}
+.estadistica span {
+  font-weight: bold;
+  font-size: 16px;
+}
