@@ -29,7 +29,7 @@ body {
   position: relative;
 }
 
-/* Overlay para oscurecer ligeramente el fondo */
+/* Estilo para oscurecer ligeramente el fondo */
 body::before {
   content: '';
   position: fixed;
